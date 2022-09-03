@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView_Kullanımı" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm9-8O-lHV">
+                                <rect key="frame" x="186" y="191" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coO-Lk-YdM">
+                                <rect key="frame" x="0.0" y="297" width="414" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="AFD-8Y-f1O"/>
+                                    <constraint firstAttribute="width" constant="414" id="e8h-9w-rqf"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxn-VX-Qhw">
+                                <rect key="frame" x="173.5" y="544" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Göster"/>
+                                <connections>
+                                    <action selector="goster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HHj-jw-4rb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="coO-Lk-YdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="35Z-17-MSm"/>
+                            <constraint firstItem="coO-Lk-YdM" firstAttribute="top" secondItem="Pm9-8O-lHV" secondAttribute="bottom" constant="85" id="9vl-3h-83Z"/>
+                            <constraint firstItem="Mxn-VX-Qhw" firstAttribute="top" secondItem="coO-Lk-YdM" secondAttribute="bottom" constant="84" id="NHx-go-md1"/>
+                            <constraint firstItem="Pm9-8O-lHV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="Ppk-XY-EYP"/>
+                            <constraint firstItem="coO-Lk-YdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UBj-xj-7QB"/>
+                            <constraint firstItem="coO-Lk-YdM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eGX-Aj-vWJ"/>
+                            <constraint firstItem="Pm9-8O-lHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qbq-UX-GzO"/>
+                            <constraint firstItem="Mxn-VX-Qhw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s9s-go-LZf"/>
+                            <constraint firstItem="coO-Lk-YdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wPP-3i-goq"/>
+                            <constraint firstItem="coO-Lk-YdM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xJh-bC-lgv"/>
+                            <constraint firstItem="coO-Lk-YdM" firstAttribute="top" secondItem="Pm9-8O-lHV" secondAttribute="bottom" constant="85" id="zbl-kW-xeO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSonuc" destination="Pm9-8O-lHV" id="pUP-3v-1Ur"/>
+                        <outlet property="pickerView" destination="coO-Lk-YdM" id="9A8-73-7JD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.34782608695653" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Date_and_Time_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tarih" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSH-fZ-ge4">
+                                <rect key="frame" x="140" y="207" width="135" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Ybe-dR-cOz"/>
+                                    <constraint firstAttribute="height" constant="34" id="vmp-Sx-RCc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Saat" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-RW-ML1">
+                                <rect key="frame" x="149" y="342" width="116" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="fa3-wQ-hek"/>
+                                    <constraint firstAttribute="height" constant="34" id="g8D-oh-uza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JSH-fZ-ge4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="AGB-It-mwJ"/>
+                            <constraint firstItem="JSH-fZ-ge4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="EUd-P3-GNx"/>
+                            <constraint firstItem="JSH-fZ-ge4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="LXO-km-LeW"/>
+                            <constraint firstItem="Cc4-RW-ML1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZAc-wZ-pke"/>
+                            <constraint firstItem="Cc4-RW-ML1" firstAttribute="top" secondItem="JSH-fZ-ge4" secondAttribute="bottom" constant="101" id="kcV-Uq-k5h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JSH-fZ-ge4" secondAttribute="trailing" constant="139" id="mln-mt-gwd"/>
+                            <constraint firstItem="Cc4-RW-ML1" firstAttribute="top" secondItem="JSH-fZ-ge4" secondAttribute="bottom" constant="101" id="tHj-SR-tlD"/>
+                            <constraint firstItem="JSH-fZ-ge4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zgC-yW-kSw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldSaat" destination="Cc4-RW-ML1" id="Wr3-po-ekC"/>
+                        <outlet property="texttFieldTarih" destination="JSH-fZ-ge4" id="Pah-hN-xCl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="56.919642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
