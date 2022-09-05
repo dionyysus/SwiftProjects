@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Detaylı_TableView_Kullanımı" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CCl-2D-l59">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yemekHucre" id="ON1-UE-QqC" customClass="YemekTableViewCell" customModule="Detaylı_TableView_Kullanımı" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ON1-UE-QqC" id="Kae-Nn-FDy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="izgaratavuk" translatesAutoresizingMaskIntoConstraints="NO" id="K2I-7z-bXr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="102" id="7Hr-EZ-JZa"/>
+                                                        <constraint firstAttribute="height" constant="100" id="K7b-p6-T0S"/>
+                                                        <constraint firstAttribute="width" constant="100" id="saK-VE-2VK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tavuk Izgara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GX5-ye-i12">
+                                                    <rect key="frame" x="119" y="11" width="110" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNt-SQ-oWB">
+                                                    <rect key="frame" x="119" y="68" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="tintColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyp-Pg-yuf">
+                                                    <rect key="frame" x="269" y="29.5" width="125" height="41"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Sipariş Ver">
+                                                        <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                                        <color key="baseForegroundColor" red="0.96072036027908325" green="0.071987904608249664" blue="0.11479897052049637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="siparisVerButton:" destination="ON1-UE-QqC" eventType="touchUpInside" id="1uC-by-6CT"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kyp-Pg-yuf" firstAttribute="leading" secondItem="GX5-ye-i12" secondAttribute="trailing" constant="40" id="0cV-4X-Ie0"/>
+                                                <constraint firstItem="kNt-SQ-oWB" firstAttribute="top" secondItem="GX5-ye-i12" secondAttribute="bottom" constant="33" id="Bbz-db-lfE"/>
+                                                <constraint firstItem="kNt-SQ-oWB" firstAttribute="leading" secondItem="K2I-7z-bXr" secondAttribute="trailing" constant="19" id="DQb-L2-e6X"/>
+                                                <constraint firstItem="GX5-ye-i12" firstAttribute="top" secondItem="Kae-Nn-FDy" secondAttribute="topMargin" id="GEZ-1Z-ZoP"/>
+                                                <constraint firstItem="kNt-SQ-oWB" firstAttribute="top" secondItem="GX5-ye-i12" secondAttribute="bottom" constant="33" id="H0N-nC-zYC"/>
+                                                <constraint firstItem="K2I-7z-bXr" firstAttribute="leading" secondItem="Kae-Nn-FDy" secondAttribute="leading" id="XVT-pe-8tY"/>
+                                                <constraint firstItem="Kyp-Pg-yuf" firstAttribute="top" secondItem="Kae-Nn-FDy" secondAttribute="topMargin" constant="18.5" id="aIb-jk-fUy"/>
+                                                <constraint firstItem="Kyp-Pg-yuf" firstAttribute="trailing" secondItem="Kae-Nn-FDy" secondAttribute="trailingMargin" id="cVY-n3-Fy6"/>
+                                                <constraint firstItem="GX5-ye-i12" firstAttribute="leading" secondItem="K2I-7z-bXr" secondAttribute="trailing" constant="19" id="h7i-Nk-qXs"/>
+                                                <constraint firstItem="K2I-7z-bXr" firstAttribute="top" secondItem="Kae-Nn-FDy" secondAttribute="top" id="iJ0-Qw-SSt"/>
+                                                <constraint firstItem="kNt-SQ-oWB" firstAttribute="bottom" secondItem="Kae-Nn-FDy" secondAttribute="bottomMargin" id="trd-sR-BHh"/>
+                                                <constraint firstItem="Kyp-Pg-yuf" firstAttribute="centerY" secondItem="Kae-Nn-FDy" secondAttribute="centerY" id="wQD-n3-owC"/>
+                                                <constraint firstAttribute="bottom" secondItem="K2I-7z-bXr" secondAttribute="bottom" id="z3N-HS-Myr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelYemekAdi" destination="GX5-ye-i12" id="VKl-n7-yFe"/>
+                                            <outlet property="labelYemekFiyat" destination="kNt-SQ-oWB" id="AeI-3Y-Hai"/>
+                                            <outlet property="yemekResimImageView" destination="K2I-7z-bXr" id="IV3-8r-gRV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CCl-2D-l59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DVh-We-ZGc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CCl-2D-l59" secondAttribute="bottom" id="GVg-90-bTs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CCl-2D-l59" secondAttribute="trailing" id="RKS-E3-TSK"/>
+                            <constraint firstItem="CCl-2D-l59" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hzh-zS-dfk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="yemeklerTableView" destination="CCl-2D-l59" id="ZgL-8R-fI4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="70.982142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="izgaratavuk" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -13,6 +13,8 @@
 		0A0F383228C5B79F004194CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F383028C5B79F004194CA /* Main.storyboard */; };
 		0A0F383428C5B7A1004194CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F383328C5B7A1004194CA /* Assets.xcassets */; };
 		0A0F383728C5B7A1004194CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0F383528C5B7A1004194CA /* LaunchScreen.storyboard */; };
+		0A0F383F28C5BD33004194CA /* YemekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F383E28C5BD33004194CA /* YemekTableViewCell.swift */; };
+		0A0F384128C5C373004194CA /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F384028C5C373004194CA /* Yemekler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0A0F383328C5B7A1004194CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0F383628C5B7A1004194CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0F383828C5B7A1004194CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0F383E28C5BD33004194CA /* YemekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekTableViewCell.swift; sourceTree = "<group>"; };
+		0A0F384028C5C373004194CA /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 				0A0F382C28C5B79F004194CA /* SceneDelegate.swift */,
 				0A0F382E28C5B79F004194CA /* ViewController.swift */,
 				0A0F383028C5B79F004194CA /* Main.storyboard */,
+				0A0F384028C5C373004194CA /* Yemekler.swift */,
 				0A0F383328C5B7A1004194CA /* Assets.xcassets */,
 				0A0F383528C5B7A1004194CA /* LaunchScreen.storyboard */,
 				0A0F383828C5B7A1004194CA /* Info.plist */,
+				0A0F383E28C5BD33004194CA /* YemekTableViewCell.swift */,
 			);
 			path = "Detaylı TableView Kullanımı";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0F384128C5C373004194CA /* Yemekler.swift in Sources */,
 				0A0F382F28C5B79F004194CA /* ViewController.swift in Sources */,
+				0A0F383F28C5BD33004194CA /* YemekTableViewCell.swift in Sources */,
 				0A0F382B28C5B79F004194CA /* AppDelegate.swift in Sources */,
 				0A0F382D28C5B79F004194CA /* SceneDelegate.swift in Sources */,
 			);
