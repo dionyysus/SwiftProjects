@@ -15,14 +15,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tasarim: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        
+        let genislik = self.collectionView.frame.size.width
+        
+        tasarim.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        
+        tasarim.itemSize = CGSize(width: (genislik - 30)/3, height: (genislik - 30)/3)
+        
+        tasarim.minimumInteritemSpacing = 5
+        
+        tasarim.minimumLineSpacing = 5
+        
+        
+        
+        collectionView!.collectionViewLayout = tasarim
 
-        ulkeler = ["Turkiye", "Fransa", "Almanya", "İspanya", "Mısır"]
+        ulkeler = ["Turkiye", "Fransa", "Almanya", "İspanya", "Mısır", "Japonya"]
         
         collectionView.delegate = self
         collectionView.dataSource = self
 
     }
-
 
 }
 
@@ -40,6 +55,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ulkeHucre", for: indexPath) as! CollectionViewHucre
         
         cell.hucreLabel.text = ulkeler[indexPath.row]
+        
+        cell.layer.borderColor = UIColor.blue.cgColor
+        
+        cell.layer.borderWidth = 0.5
         
         return cell
     }
