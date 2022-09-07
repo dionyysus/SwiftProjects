@@ -71,6 +71,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate, YemekTable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let gelenYemek = yemeklerListesi[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "yemekHucre", for: indexPath) as! YemekTableViewCell
