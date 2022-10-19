@@ -1,0 +1,45 @@
+
+/* Class = "UINavigationItem"; title = "Kişiler"; ObjectID = "4ck-QO-hZX"; */
+"4ck-QO-hZX.title" = "Kişiler";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CR3-hh-uss"; */
+"CR3-hh-uss.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Kişi Güncelle"; ObjectID = "FM6-Dm-n85"; */
+"FM6-Dm-n85.title" = "Kişi Güncelle";
+
+/* Class = "UITextField"; placeholder = "Kişi Adı"; ObjectID = "MCJ-qX-r2g"; */
+"MCJ-qX-r2g.placeholder" = "Kişi Adı";
+
+/* Class = "UIButton"; configuration.title = "Ekle"; ObjectID = "S1M-AX-Kzu"; */
+"S1M-AX-Kzu.configuration.title" = "Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "S1M-AX-Kzu"; */
+"S1M-AX-Kzu.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Kişi Ekle"; ObjectID = "YLK-dM-pIH"; */
+"YLK-dM-pIH.title" = "Kişi Ekle";
+
+/* Class = "UITextField"; placeholder = "Kişi Tel"; ObjectID = "bcL-1a-ugQ"; */
+"bcL-1a-ugQ.placeholder" = "Kişi Tel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "giS-E4-1p8"; */
+"giS-E4-1p8.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Kişi Adı"; ObjectID = "mx5-xL-Tsy"; */
+"mx5-xL-Tsy.placeholder" = "Kişi Adı";
+
+/* Class = "UITextField"; placeholder = "Kişi Tel"; ObjectID = "sJ8-qo-2P7"; */
+"sJ8-qo-2P7.placeholder" = "Kişi Tel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tEZ-c9-Dgu"; */
+"tEZ-c9-Dgu.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Ekle"; ObjectID = "tTG-74-Cky"; */
+"tTG-74-Cky.configuration.title" = "Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tTG-74-Cky"; */
+"tTG-74-Cky.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Kişi Detay"; ObjectID = "uWb-aI-mIr"; */
+"uWb-aI-mIr.title" = "Kişi Detay";
